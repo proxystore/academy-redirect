@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecting…</title>
+
+    <!-- Canonical URL tells search engines where the "real" content lives -->
+    <link rel="canonical" href="https://docs.academy-agents.org/" />
+
+    <!-- Meta refresh as a fallback if JavaScript is disabled (0s delay) -->
+    <meta http-equiv="refresh" content="0; url=https://docs.academy-agents.org/" />
+
+    <script>
+      // Preserve path, query, and hash when redirecting
+      var newUrl =
+        "https://docs.academy-agents.org" +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash;
+      window.location.replace(newUrl);
+    </script>
+  </head>
+  <body>
+    <p>
+      Redirecting to
+      <a href="https://docs.academy-agents.org/">docs.academy-agents.org</a>…
+    </p>
+    <!-- Noscript fallback in case JS is disabled -->
+    <noscript>
+      <p>
+        If you are not redirected automatically, follow this
+        <a href="https://docs.academy-agents.org/">link to docs.academy-agents.org</a>.
+      </p>
+    </noscript>
+  </body>
+</html>
